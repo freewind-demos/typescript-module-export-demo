@@ -1,3 +1,6 @@
-import {capitalize} from 'lodash';
+import * as core from './core';
 
-console.log("Hello " + capitalize("typescript") + "!");
+core.helloCore();
+
+const newCore = new core.Core();
+newCore.hello();
